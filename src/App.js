@@ -1,6 +1,5 @@
 import React from 'react';
 import { CSSReset, theme, ThemeProvider,useColorMode, IconButton, Tooltip, ChakraProvider } from '@chakra-ui/react';
-import './App.css';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './components/Home';
