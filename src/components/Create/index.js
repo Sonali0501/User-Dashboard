@@ -30,7 +30,7 @@ const Create = (props) => {
         await props.addUser(user);
         swal({
             title: "",
-            text: "You have been successfully logged in",
+            text: "You have been successfully created new user",
             icon: "success",
             button: "Go to Dashboard",
         }).then(() => {
@@ -56,7 +56,22 @@ const Create = (props) => {
             validate={values => {
                 const errors = {};
                 if (!values.name) {
-                    errors.fname = 'Required';
+                    errors.name = 'Required';
+                }
+                if (!values.username) {
+                    errors.username = 'Required';
+                }
+                if (!values.city) {
+                    errors.city = 'Required';
+                }
+                if (!values.zipcode) {
+                    errors.zipcode = 'Required';
+                }
+                if (!values.phone) {
+                    errors.phone = 'Required';
+                }
+                if (!values.website) {
+                    errors.website = 'Required';
                 }
                 if (!values.email) {
                     errors.email = 'Required';
